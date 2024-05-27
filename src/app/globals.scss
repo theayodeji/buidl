@@ -1,0 +1,61 @@
+@import url('https://fonts.cdnfonts.com/css/gamesome');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Gamesome', sans-serif;
+}
+
+p, span{
+    font-family: Poppins, sans-serif;
+} 
+
+.container, nav{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,9,47,1) 54%, rgba(0,108,130,1) 100%);
+    min-height: 100dvh;
+    overflow: hidden scroll;
+
+    &::after{
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(6px);
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    *{
+        color: white;
+    }
+}
+
+.container * {
+    text-align: center;
+}
+
+.img-container{
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+.img-container img{
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+    .container{
+        max-width: 1200px;
+    }
+}

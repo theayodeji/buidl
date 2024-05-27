@@ -1,0 +1,41 @@
+.nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 2em;
+        align-items: center;
+
+        *{
+            text-decoration: none;
+            color: unset;
+            font-size: 16px !important;
+        }
+    }
+
+    button{
+        background-color: #00b7ff;
+        border: none;
+        padding: .8rem 1.3rem;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.568) -5px 2px 13px;
+        font-weight: 400;
+    }
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    svg *{
+        fill: #00b7ff;
+    }
+}

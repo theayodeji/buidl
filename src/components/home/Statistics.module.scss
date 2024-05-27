@@ -1,0 +1,43 @@
+// components/Statistics.module.scss
+.statisticsContainer {
+    padding: 2rem;
+    background-color: #1d1d1d52;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .statItem {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+  }
+  
+  .statItem:hover {
+    transform: translateY(-5px);
+  }
+  
+  .statItem h3 {
+    font-size: 2rem;
+    margin: 0;
+    color: #00b7ff;
+  }
+  
+  .statItem p {
+    margin: 0.5rem 0 0;
+    color:  white;
+    font-size: 1rem;
+  }
+  
